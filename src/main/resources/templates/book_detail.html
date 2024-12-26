@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book Detail</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="${book.title}"></h1>
+        <p>Author: <span th:text="${book.author}"></span></p>
+        <p>Year Published: <span th:text="${book.yearPublished}"></span></p>
+        <p>Genre: <span th:text="${book.genre}"></span></p>
+
+        <form th:action="@{/user/borrow/{bookId}(bookId=${book.id})}" method="post">
+            <button type="submit">Borrow this Book</button>
+        </form>
+    </div>
+</body>
+</html>

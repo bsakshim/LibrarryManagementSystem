@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Borrowed Books</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>My Borrowed Books</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Book Title</th>
+                    <th>Borrow Date</th>
+                    <th>Return Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="borrow : ${borrowedBooks}">
+                    <td th:text="${borrow.book.title}"></td>
+                    <td th:text="${borrow.borrowDate}"></td>
+                    <td th:text="${borrow.returnDate}"></td>
+                    <td th:text="${borrow.returned ? 'Returned' : 'Not Returned'}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

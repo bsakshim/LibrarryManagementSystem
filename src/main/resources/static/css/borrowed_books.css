@@ -1,0 +1,21 @@
+/* Borrowed Books Page */
+.borrowed-books {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.borrowed-books table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.borrowed-books table th, .borrowed-books table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.borrowed-books table th {
+    background-color: #f2f2f2;
+}

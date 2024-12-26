@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a th:href="@{/user/borrowed-books}">My Borrowed Books</a></li>
+                <li><a th:href="@{/user/feedback}">Give Feedback</a></li>
+                <li><a th:href="@{/logout}">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>

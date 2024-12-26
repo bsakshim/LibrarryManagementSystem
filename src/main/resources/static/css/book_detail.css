@@ -1,0 +1,26 @@
+/* Book Detail Page */
+.book-detail {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+.book-detail img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.book-detail .details {
+    padding: 20px;
+}
+
+.book-detail .details h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.book-detail .details p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
